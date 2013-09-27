@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+		<html>
+		  <head>
+    		<meta charset="utf-8">
+		    <title>jQuery.panelSnap Plugin</title>
+
+		    <link rel="icon" type="image/png" href="../favicon.png">
+				<link rel="stylesheet" href="css/style.css" type="text/css" media="screen" title="no title" charset="utf-8">
+		  </head>
+		  <body>
+		    <section class="introduction">
+		      <h1>
+		        Le dessous des grilles
+		      </h1>
+		      <p>
+		       	Tout ce que vous avez jamais rêvé de découvrir à propos des grilles
+		      </p>
+		    </section>
+
+		    <section class="basic_setup">
+		      <h1>
+		        The basic setup
+		      </h1>
+		    </section>
+
+		    <section class="configuration">
+		      <h1>
+		        Configuration options
+		      </h1>
+		    </section>
+
+		    <section class="menu_demo">
+		      <h1>
+		        Connected menu
+		      </h1>
+		      <div class="menu">
+		        <a href="" data-panel="first">
+		          First panel
+		        </a>
+		        <a href="" data-panel="second" class="active">
+		          Second panel
+		        </a>
+		        <a href="" data-panel="third">
+		          Third panel
+		        </a>
+		      </div>
+		      <div class="panels">
+		        <section data-panel="first">
+		          <h1>First</h1>
+		        </section>
+		        <section data-panel="second">
+		          <h1>Second</h1>
+		        </section>
+		        <section data-panel="third">
+		          <h1>Third</h1>
+		        </section>
+		      </div>
+		    </section>
+
+
+		    <script src="js/jquery.min.js"></script>
+		    <script src="js/jquery.panelSnap.js"></script>
+		    <script>
+		      // Basic demo
+		      $('body').panelSnap();
+
+		      // Menu demo
+		      $('.menu_demo .panels').panelSnap({
+		        $menu: $('.menu_demo .menu')
+		      });
+
+		    </script>
+
+		  </body>
+		</html>
