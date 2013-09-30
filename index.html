@@ -4,23 +4,83 @@
     		<meta charset="utf-8">
 		    <title>jQuery.panelSnap Plugin</title>
 
-		    <link rel="icon" type="image/png" href="../favicon.png">
-				<link rel="stylesheet" href="css/style.css" type="text/css" media="screen" title="no title" charset="utf-8">
+		    <link rel="icon" type="image/png" href="favicon.png">
+				<link rel="stylesheet" href="assets/css/style.css" type="text/css" media="screen" title="no title" charset="utf-8">
 		  </head>
 		  <body>
 		    <section class="introduction">
-		      <h1>
-		        Le dessous des grilles
-		      </h1>
-		      <p>
-		       	Tout ce que vous avez jamais rêvé de découvrir à propos des grilles
-		      </p>
+		      <h1>Le dessous des grilles</h1>
+		      <h2>Tout ce que vous avez toujours rêvé de découvrir à propos des grilles</h2>
+					<p class="small">Défricher l'histoire des grilles CSS et en décrypter leur fonctionnement</p>
 		    </section>
+		
+				<section class="spirit">
+		      <h1>L'atelier</h1>
+		      <h2>De l'abondance à la rareté</h2>
+					<p>Les frameworks et autres systèmes "clefs en main" proposent un florilège de modules ou extensions. On dispose de toutes les fonctionnalités possible.</p>
+					<ol>
+						<li>Mais de quoi a-t-on vraiment besoin ?</li>
+						<li>Maîtrise-t-on l'ensemble des fonctionnalités utilisées ?</li>
+					</ol>
+					
+					<blockquote>
+						<p>I feel that grid systems as a code—rather than design—tool are still *vastly* misunderstood and underrated. I should write/speak about them…</p>
+						<p><strong>- Harry Roberts -</strong></p>
+					</blockquote>
+		    </section>
+		
+				<section class="framework">
+		      <h1>Les frameworks - WTF ?</h1>
+		      <h2>La toolbox</h2>
+					<p>Dans le temps ancien des années 2000, la faible professionnalisation des intégrateurs CSS, faisait qu'on repartait souvent d'une page blanche. Petit à petit, ces érudits électroniques se sont armés de bibliothèques de styles ; puis ont commencé à les uniformiser et à les partager à mesure que les navigateurs se standardisaient.</p>
+					
+					<p>Page listant différents framework HTML/CSS => <a href="http://usablica.github.io/front-end-frameworks/compare.html">Framework Compare</a> </p>
+		    </section>
+				
+				<section class="Grid">
+					<h1>Les grilles</h1>
+					<p>Une grille typographique est une structure à deux dimensions composée de séries d'axes verticaux et horizontaux se croisant. Elle est utilisée pour structurer un contenu.</p>
+					<h2>Les élements</h2>
+					<ol>
+						<li>L'élément englobant (row) — largeur de colonne ou 100%</li>
+						<li>Les modules de contenus (block) — fraction de la colonne</li>
+						<li>Une marge extérieure — gouttière régulière de séparation des modules</li>
+						<li>Une marge intérieure — gouttière intra module</li>
+					</ol>
+					<h2>Disposition</h2>
+					<ol>
+						<li>N modules avec chacun une gouttière (gauche ou droite)</li>
+						<li>1er et dernier élément sans gouttière (gauche ou droite)</li>
+					</ol>
+				</section>
+				
+				<section class="oil">
+					<h1></h1>
+				</section>
 
-		    <section class="basic_setup">
-		      <h1>
-		        The basic setup
-		      </h1>
+		    <section class="ressources">
+		      <h1>Ressources</h1>
+					<h2>Grilles Pixels</h2>
+					<ul>
+						<li><a href="http://davidwalsh.name/stylus-grid">Stylus grid</a></li>
+					</ul>
+					
+					<h2>Grilles Pourcentages</h2>
+					
+					<ul>
+						<li><a href="http://davidwalsh.name/stylus-grid">Stylus grid</a></li>
+					</ul>
+					
+					<h2>Grilles em</h2>
+					
+					<ul>
+						<li><a href="http://goldilocksapproach.com/">The Goldilocks Approach</a></li>
+					</ul>
+					
+					<h2>Grilles Flexbox</h2>
+					
+					<h2>Grilles tableaux</h2>
+					
 		    </section>
 
 		    <section class="configuration">
@@ -58,8 +118,8 @@
 		    </section>
 
 
-		    <script src="js/jquery.min.js"></script>
-		    <script src="js/jquery.panelSnap.js"></script>
+		    <script src="assets/js/jquery.min.js"></script>
+		    <script src="assets/js/jquery.panelSnap.js"></script>
 		    <script>
 		      // Basic demo
 		      $('body').panelSnap();
