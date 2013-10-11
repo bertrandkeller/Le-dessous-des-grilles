@@ -1,7 +1,7 @@
 Le dessous des grilles
 =================
 
-Le dessous des grilles - un atelier Paris Web 2013
+Le dessous des grilles - un atelier Paris Web 2013 -
 http://www.paris-web.fr/2013/ateliers/le-dessous-des-grilles.php
 
 #Descriptif#

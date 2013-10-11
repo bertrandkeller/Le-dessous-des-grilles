@@ -1,4 +1,4 @@
-@import url(http://fonts.googleapis.com/css?family=Lato:100);
+/* @import url(http://fonts.googleapis.com/css?family=Lato:100);*/
 
 * {
   box-sizing: border-box;
@@ -15,14 +15,19 @@ body {
   color: #ffffff;
   font-family: 'Lato';
   font-weight: 100;
-  font-size: 32px;
+  font-size: 28px;
 }
 
 h1 {
   font-weight: inherit;
   text-transform: uppercase;
-  font-size: 250%;
+  font-size: 300%;
   margin: 0;
+}
+
+h2 {
+	margin-bottom: .2em;
+	font-size: 120%;
 }
 
 a {
@@ -33,13 +38,19 @@ img {
   max-width: 100%;
 }
 
-p {
-  max-width: 800px;
+h2,h3,p {
+  max-width: 1000px;
 }
 
-p.small,
+.small,
 pre {
   font-size: 70%;
+}
+
+blockquote {
+	padding: .2em 1em;
+	color: #333;
+	background: #fff;
 }
 
 section {
@@ -71,23 +82,19 @@ section:nth-child(2n) pre {
   background: #1abc9c;
 }
 
-.panels,
-.log,
-.menu,
-pre {
-  position: absolute;
-  top: 200px;
-  bottom: 50px;
-  right: 50px;
-  left: 400px;
-  overflow: scroll;
+iframe {
+	margin: 0 auto;
+	border: 2px solid;
 }
 
 .log,
 .menu {
-  right: auto;
-  left: 50px;
-  width: 300px;
+  position: relative;
+	display: block;
+}
+
+.panels {
+	bottom: 50px;
 }
 
 pre {
@@ -96,8 +103,8 @@ pre {
 }
 
 .menu a {
-  display: block;
-  width: 100%;
+  display: inline-block;
+  width: 32%;
   padding: 25px;
   background: #f1c40f;
   text-decoration: none;
@@ -110,10 +117,45 @@ pre {
   background: #f39c12;
 }
 
-@media screen and (max-width: 1000px) {
-  .panels,
-  .log,
-  .menu {
-    top: 300px;
-  }
+@media screen and (min-width: 1000px) {
+	.panels,
+	.log,
+	.menu,
+	pre {
+	  position: absolute;
+	  top: 200px;
+	  bottom: 50px;
+	  right: 50px;
+	  left: 400px;
+	  overflow: scroll;
+	}
+
+	.log,
+	.menu {
+	  right: auto;
+	  left: 50px;
+	  width: 300px;
+	}
+	.menu a {
+	  width: 100%;
+	}
+}
+
+
+@media screen and (max-width: 1024px) {
+	body {
+		font-size: 24px;
+	}
+	h1 {
+		font-size: 150%;
+	}
+}
+
+@media screen and (max-width: 640px) {
+	body {
+		font-size: 18px;
+	}
+	h1 {
+		font-size: 120%;
+	}
 }

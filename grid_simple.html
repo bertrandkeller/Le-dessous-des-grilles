@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8">
+    <title>Grilles CSS</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="assets/css/grid-main.css" media="screen">
+		<script src="assets/js/jquery.min.js"></script>
+		<script src="assets/js/custom.js"></script>
+
+		<style type="text/css" media="screen">
+	
+			/* Rows */
+			/*-----------------------------------*/
+			
+			.grid-row-pixel {
+				margin-left: -12px; /* gutter */
+			}
+			
+			.grid-row-pourcent {
+				margin-left: -1.25%; /* gutter */
+			}
+			
+			.grid-row-em {
+				margin-left: -.75em; /* gutter */
+			}
+			
+			.grid-row-flex {
+				display: -webkit-box;
+				display: -webkit-flex;
+				display: -moz-box;
+				display: -ms-flexbox;
+				display: flex;
+				-webkit-flex-wrap: wrap;
+				-ms-flex-wrap: wrap;
+				flex-wrap: wrap;
+				margin-left: -.75em; /* gutter */
+			}
+			
+			/* Modules */
+			/*-----------------------------------*/
+			
+			/* Grid style */			
+			.content-special {
+				height: 70px;
+			}
+			
+			.grid-block {
+				position: relative;
+				box-sizing: border-box;
+			  -moz-box-sizing: border-box;
+			}
+			
+			.grid--border .grid-block {
+				border-left: 1px solid #000;
+			}
+			
+			/* Grid dimension */
+			.grid-row-pixel .grid-block {
+				width: 150px; /* for 960px grid */
+				margin-left: 12px; /* gutter */
+			}
+			
+			.grid-row-pourcent .grid-block {
+				width: 15.416666667%;
+				margin-left: 1.25%; /* gutter */
+			}
+			
+			.grid-row-em .grid-block {
+				width: 9.37em;
+				margin-left: .75em; /* gutter */
+			}
+			
+			.grid-row-flex .grid-block {
+				margin-left: .75em;
+				-webkit-box-flex: 1;
+				-webkit-flex: 1;
+				-moz-box-flex: 1;
+				-ms-flex: 1;
+				flex: 1;
+				/*-webkit-flex: 0 0 13.3333%;*/
+			}
+			
+			/* Media query small devices */
+			/*-----------------------------------*/
+			
+			@media only screen and (max-width: 60em) {
+				.container_int {
+					width: 30em;
+				}
+				.grid-row-pixel .grid-block {
+					width: 70px; 
+					margin-left: 12px; /* gutter */
+				}
+
+				.grid-row-pourcent .grid-block {
+					width: 15.416666667%;
+					margin-left: 1.25%; /* gutter */
+				}
+
+				.grid-row-em .grid-block {
+					width: 4.36em;
+					margin-left: .75em; /* gutter */
+				}
+			}
+
+			@media only screen and (max-width: 30em) {
+				.container_int {
+					width: 100%;
+				}
+				.grid-block {
+					width: 100% !important;
+				}
+			}
+			
+		</style>
+
+  </head>
+
+  <body>
+	
+		<div class="container">
+			<div class="container_int">
+				
+				<h1>Le dessous des grilles - <span>pixel</span></h1>
+			
+				<div class="grid-button-mod">
+					<h2>Mode de gestion de grille</h2>
+					<button class="grid-row-pixel" href="#">px</button>
+					<button class="grid-row-pourcent" href="#">%</button>
+					<button class="grid-row-em" href="#">em</button>
+					<button class="grid-row-flex" href="#">flex</button>
+				</div>
+				
+				<div class="grid-button-dom">
+					<h2>Manipulation de la grille</h2>
+					<button class="grid-dom-add" href="#">mod</button>
+					<button class="grid-dom-height" href="#">height</button>
+					<button class="grid-dom-clear" href="#">clear</button>
+				</div>
+		
+				<div id="grid-row" class="grid-row-pixel">
+					<div class="grid-block"></div>
+					<div class="grid-block"></div>
+					<div class="grid-block"></div>
+					<div class="grid-block"></div>
+					<div class="grid-block"></div>
+					<div class="grid-block"></div>
+				</div>
+			</div>
+		</div>
+
+  </body>
+</html>
