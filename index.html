@@ -2,7 +2,7 @@
 		<html>
 		  <head>
     		<meta charset="utf-8">
-		    <title>jQuery.panelSnap Plugin</title>
+		    <title>Le dessous des grilles - Paris web 2012</title>
 
 		    <link rel="icon" type="image/png" href="favicon.png">
 				<link rel="stylesheet" href="assets/css/style.css" type="text/css" media="screen" title="no title" charset="utf-8">
@@ -17,12 +17,14 @@
 				<section class="spirit">
 		      <h1>L'atelier</h1>
 		      <h2>De l'abondance à la rareté</h2>
-					<p>Les frameworks et autres systèmes "clefs en main" proposent un florilège de modules ou extensions. On dispose de toutes les fonctionnalités possible.</p>
+					<p>Les frameworks et autres systèmes "clefs en main" proposent un florilège de modules ou extensions. On dispose de toutes les fonctionnalités possibles.</p>
 					<ol>
 						<li>Mais de quoi a-t-on vraiment besoin ?</li>
 						<li>Maîtrise-t-on l'ensemble des fonctionnalités utilisées ?</li>
+						<li>Comment maintenir un système performant ?</li>
 					</ol>
 					
+					<h2>Citation :</h2>
 					<blockquote>
 						<p>I feel that grid systems as a code—rather than design—tool are still *vastly* misunderstood and underrated. I should write/speak about them…</p>
 						<p><strong>- Harry Roberts -</strong></p>
@@ -31,10 +33,12 @@
 		
 				<section class="framework">
 		      <h1>Les frameworks - WTF ?</h1>
-		      <h2>La toolbox</h2>
+		      <h2>La boîte à outils</h2>
 					<p>Dans le temps ancien des années 2000, la faible professionnalisation des intégrateurs CSS, faisait qu'on repartait souvent d'une page blanche. Petit à petit, ces érudits électroniques se sont armés de bibliothèques de styles ; puis ont commencé à les uniformiser et à les partager à mesure que les navigateurs se standardisaient.</p>
 					
-					<p>Page listant différents framework HTML/CSS => <a href="http://usablica.github.io/front-end-frameworks/compare.html">Framework Compare</a> </p>
+					<p>Liste de différents framework HTML/CSS => <a href="http://usablica.github.io/front-end-frameworks/compare.html">Framework Compare</a></p>
+					<h2>Une bibliothèque modulaire</h2>
+					<p>Les frameworks sont décomposés en plusieurs séries de fichiers (base, helpers, layout...). Ces fichiers sont activables à loisir. </p>
 		    </section>
 				
 				<section class="Grid">
@@ -42,82 +46,105 @@
 					<p>Une grille typographique est une structure à deux dimensions composée de séries d'axes verticaux et horizontaux se croisant. Elle est utilisée pour structurer un contenu.</p>
 					<h2>Les élements</h2>
 					<ol>
-						<li>L'élément englobant (row) — largeur de colonne ou 100%</li>
+						<li>L'élément englobant (row) — largeur du conteneur</li>
 						<li>Les modules de contenus (block) — fraction de la colonne</li>
 						<li>Une marge extérieure — gouttière régulière de séparation des modules</li>
 						<li>Une marge intérieure — gouttière intra module</li>
 					</ol>
 					<h2>Disposition</h2>
 					<ol>
-						<li>N modules avec chacun une gouttière (gauche ou droite)</li>
+						<li>N modules avec chacun une gouttière (gauche ou droite ou les deux)</li>
 						<li>1er et dernier élément sans gouttière (gauche ou droite)</li>
 					</ol>
 				</section>
 				
 				<section class="oil">
-					<h1></h1>
+					<h1>Le cambouis</h1>
+					<h2>Exercice de groupe</h2>
+					<h3>Matériel</h3>
+					<ul>
+						<li>Groupe de 4 personnes</li>
+						<li>Du papier et un crayon</li>
+						<li>Un ordinateur avec une connexion web</li>
+					</ul>
+					<h3>Principe</h3>
+					<ol>
+						<li>Construire d'une grille de 2 lignes de 6 éléments égaux (chacune) ; séparés par une gouttière de 12px</li>
+					</ol>
 				</section>
-
-		    <section class="ressources">
-		      <h1>Ressources</h1>
-					<h2>Grilles Pixels</h2>
-					<ul>
-						<li><a href="http://davidwalsh.name/stylus-grid">Stylus grid</a></li>
-					</ul>
-					
-					<h2>Grilles Pourcentages</h2>
-					
-					<ul>
-						<li><a href="http://davidwalsh.name/stylus-grid">Stylus grid</a></li>
-					</ul>
-					
-					<h2>Grilles em</h2>
-					
-					<ul>
-						<li><a href="http://goldilocksapproach.com/">The Goldilocks Approach</a></li>
-					</ul>
-					
-					<h2>Grilles Flexbox</h2>
-					
-					<h2>Grilles tableaux</h2>
-					
-		    </section>
-
-		    <section class="configuration">
-		      <h1>
-		        Configuration options
-		      </h1>
-		    </section>
-
-		    <section class="menu_demo">
-		      <h1>
-		        Connected menu
-		      </h1>
+				
+				<section class="go">
+		      <h1>Ready ? go !</h1>
 		      <div class="menu">
-		        <a href="" data-panel="first">
-		          First panel
-		        </a>
-		        <a href="" data-panel="second" class="active">
-		          Second panel
-		        </a>
-		        <a href="" data-panel="third">
-		          Third panel
-		        </a>
+		        <a href="#" data-panel="first" class="active">Pomodoro - round 1</a>
+		        <a href="#" data-panel="second">Pomodoro - round 2</a>
+		        <a href="#" data-panel="third">Pomodoro - round 3</a>
 		      </div>
 		      <div class="panels">
 		        <section data-panel="first">
-		          <h1>First</h1>
+		          <h1>Round 1 - <span class="small">30 minutes</span></h1>
+							<ol>
+								<li><strong>3 minutes</strong> - Monter un groupe, choisir un sujet, trouver le matériel, ouvrir un codepen</li>
+								<li><strong>10 minutes</strong> - Dessiner la grille sur papier, définir les côtes, éditer le code en ligne</li>
+								<li><strong>15 minutes</strong> - Rendu</li>
+								<li><strong>2 minutes</strong> - Pause</li>
+							</ol>
 		        </section>
 		        <section data-panel="second">
-		          <h1>Second</h1>
+		          <h1>Round 2 - <span class="small">15 minutes</span></h1>
+							<ol>
+								<li><strong>5 minutes</strong> - Les modules s'affichent sur 2 lignes, le 3ème est plus haut que les autres</li>
+								<li><strong>10 minutes</strong> - Rendu</li>
+							</ol>
 		        </section>
 		        <section data-panel="third">
-		          <h1>Third</h1>
+		          <h1>Round 3 - <span class="small">25 minutes</span></h1>
+							<ol>
+								<li><strong>5 minutes</strong> - Une bordure doit s'afficher entre les modules</li>
+								<li><strong>20 minutes</strong> - Rendu</li>
+							</ol>
 		        </section>
 		      </div>
 		    </section>
-
-
+				
+				<section class="generated">
+					<h1>Grilles générées</h1>
+					<h2></h2>
+					
+					<h2>Exemples de fichiers</h2>
+					<ol>
+						<li><a href="http://getbootstrap.com/css/#grid-less">Bootstrap</a></li>
+						<li><a href="https://github.com/groundworkcss/groundwork/blob/master/src/scss/base/_grid.scss">Groundwork CSS</a></li>
+						<li><a href="https://github.com/csswizardry/csswizardry-grids/blob/master/csswizardry-grids.scss">Inuit CSS</a></li>
+						<li><a href="http://unsemantic.com/sass-documentation#8-grid-container">Unsemantic</a></li>
+					</ol>
+				</section>
+				
+		    <section class="ressources">
+		      <h1>Ressources</h1>
+		
+					<h2>bertrandkeller</h2>
+					
+					<ul>
+						<li><a href="http://bertrandkeller.info">Blog de bertrandkeller</a></li>
+						<li><a href="http://twitter.com/bertrandkeller">Twitter de bertrandkeller</a></li>
+						<li><a href="http://github.com/bertrandkeller">Github de bertrandkeller</a></li>
+					</ul>
+					
+					<h2>Pour aller plus loin</h2>
+					<ul>
+						<li>Grilles pixels — <a href="http://css.4design.tl/grille-typographique-nombre-d-or/">Calculer une grille de mise en page « typo » avec le nombre d'Or</a></li>
+						<li>Grilles pourcentages — <a href="http://css-tricks.com/dont-overthink-it-grids/">Don’t Overthink It Grids</a></li>
+						<li>Grilles em — <a href="http://goldilocksapproach.com/">The Goldilocks Approach</a> / <a href="http://v1.jontangerine.com/log/2007/09/the-incredible-em-and-elastic-layouts-with-css">The Incredible Em & Elastic Layouts with CSS</a></li>
+						<li>Grilles flexbox — <a href="http://philipwalton.github.io/solved-by-flexbox/demos/grids/">Better, Simpler Grid Systems</a></li>
+						<li>Grilles tableaux — <a href="http://gabrieleromanato.name/css-creating-grids-with-table-values/">CSS: creating grids with table values</a></li>
+						<li>Grilles frameless — <a href="http://goldengridsystem.com/">Golden Grid System</a></li>
+					</ul>
+		    </section>
+				<section>
+					<iframe width="100%" height="100%" scr="file:///Users/bk/sites/dessousdesgrilles/gridpixel.html"></iframe>
+				</section>
+					
 		    <script src="assets/js/jquery.min.js"></script>
 		    <script src="assets/js/jquery.panelSnap.js"></script>
 		    <script>
@@ -125,8 +152,8 @@
 		      $('body').panelSnap();
 
 		      // Menu demo
-		      $('.menu_demo .panels').panelSnap({
-		        $menu: $('.menu_demo .menu')
+		      $('.go .panels').panelSnap({
+		        $menu: $('.go .menu')
 		      });
 
 		    </script>
