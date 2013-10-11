@@ -1,7 +1,7 @@
 body {
 	font-family: Ubuntu, Verdana, Arial, Helvetica, sans-serif;
 	font-size: 1em;
-	background: #f1f1f1;
+	background: #D0FF26;
 }
 
 .clearleft {
@@ -17,6 +17,7 @@ body {
 	max-width: 62em;
 	height: 100%;
 	background: #fff;
+	border-radius: 8px;
 }
 
 .container_int {
@@ -36,8 +37,7 @@ body {
 	margin-bottom: 1.5em;
 }
 
-[class^=grid-row],
-[class^=grid-dom] {
+#grid-row {
 	overflow: hidden;
 	box-shadow: inset 0 0 3px rgba(0,0,0,1);
 }
@@ -49,12 +49,12 @@ body {
 
 .content {
 	min-height: 50px;
-	background: olive;
+	background: #36C20E;
 	box-shadow: inset 0 0 20px 5px rgba(0,0,0,0.2);
 }
 
 .grid-block:nth-child(2n) .content {
-	background: lime;
+	background: #36C2BA;
 }
 
 /* Button group */
@@ -75,7 +75,12 @@ body {
 	font-size: .9em;
 	font-weight: bold;
 	color: #fff;
-	background: #16a085;
-	border: 2px solid;
+	background: #1C8C37;
+	border: 1px solid black;
 	cursor: pointer;
+}
+
+[class^=grid-button] button:hover {
+	background: #136626;
+	
 }
